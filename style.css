@@ -623,6 +623,7 @@ body {
   }
 
   .text_code {
+    justify-content: center;
     font-size: 8px;
     margin: 0 0 0 -17px;
   }
