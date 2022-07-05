@@ -613,7 +613,7 @@ body {
 
   .section-bottom > .section-item:nth-child(1) {
     max-width: 300px;
-    margin: 0 auto;
+    margin-left: -10px;
   }
 
   .text {
@@ -648,7 +648,6 @@ body {
 
   .languages-list__item:nth-child(1) {
     margin-right: 20px;
-    margin-left: -20px;
   }
 
   .section-bottom > .section-item:nth-child(3) {
