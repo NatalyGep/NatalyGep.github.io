@@ -94,6 +94,7 @@ body {
   font-size: 48px;
   line-height: 36px;
   letter-spacing: 0.1em;
+  line-height: 1.3;
   font-family: 'League Gothic', 'Aria', sans-serif;
   font-weight: bold; 
   font-style: normal; 
@@ -109,6 +110,7 @@ body {
   font-size: 18px;
   line-height: 12px;
   letter-spacing: 0.05em;
+  line-height: 1.3;
   color: $color-grey;
   padding-right: 9px;
   padding-left: 9px;
@@ -178,10 +180,11 @@ body {
     &::before {
   content: "";
   position: absolute;
-  left: -60px; 
+  left: -40px; 
   bottom: 25px; 
-  width: 40px;;
+  width: 20px;;
   height: 20px;
+  border: none;
   background-color: $color-yellow;
 }
 }
@@ -277,24 +280,28 @@ body {
 .text_additional-education {
   position: relative;
   list-style: none;
-  padding-top: 10px;
+  
+  line-height: 1.1;
+  font-size: 16px;
+  padding-top: 8px;
+  // border-bottom: 1px solid rgba($color-yellow, .2);
 
   &::after {
   content: "";
   position: absolute;
   left: -20px; 
-  bottom: 10px; 
-  border: 10px solid transparent; 
-  border-left: 10px solid $color-yellow;
+  bottom: 5px; 
+  border: 5px solid transparent; 
+  border-left: 5px solid $color-yellow;
 }
 
   &::before {
   content: "";
   position: absolute;
-  left: -60px; 
-  bottom: 10px; 
-  width: 40px;;
-  height: 20px;
+  left: -40px; 
+  bottom: 5px; 
+  width: 20px;;
+  height: 10px;
   background-color: $color-yellow;
 }
 }
@@ -431,38 +438,35 @@ margin-bottom: 0;
 
 .svg-container {
   position: relative;
-  // top: 0;
-  // left: 200px;
-  width: 100%;
-  height: 100%;
+  width: 400px;
 }
 
 .anima-svg {
   position: absolute;
   will-change: transform;
-  top: -30px;
-  right: 355px;
+  top: -60px;
+  right: 55px;
   animation: anima-svg 2s alternate ease-in-out infinite;
 }
 
 .anima-svg_ts {
-  top: 65px;
-  right: 320px;
+  top: 35px;
+  right: 20px;
 }
 
 .anima-svg_nmp {
-  top: 140px;
-  right: 310px;
+  top: 110px;
+  right: 10px;
 }
 
 .anima-svg_jquery {
-  top: 205px;
-  right: 330px;
+  top: 175px;
+  right: 30px;
 }
 
 .anima-svg_bootstrap {
-  top: 255px;
-  right: 365px;
+  top: 225px;
+  right: 65px;
 }
 
 @keyframes anima-svg {
@@ -475,20 +479,140 @@ margin-bottom: 0;
 }
 
 
-// @media (max-width: 1199.98px) {
-  
-// }
-// @media (max-width: 991.98px) {
-  
-// }
+@media (max-width: 1439.98px) and (min-width: 1200px) {
+  .section-item {
+    padding: 0 40px;
+  }
+  .text {
+    font-size: 22px;
+  }
+  .text_code {
+    font-size: 12px;
+  }
+}
 
-// @media (max-width: 765.98px) {
-  
-// }
+ @media (max-width: 1199.98px) and (min-width: 992px) {
+  .main {background-image: none;
+  }
 
-// @media (max-width: 575.98px) {
+  .section-top > .section-item:nth-child(2) {
+    margin: 40px 0 0 80px;
+    order: -1;
+  }
+
+   .section-top > .section-item:nth-child(1) {
+    margin-right: 40px;
+  }
+
+   .section-top > .section-item:nth-child(3) {
+    margin: 40px 90px;
+  }
+
+  .text_code {
+    font-size: 12px;
+  }
+
+  .section-center{
+    justify-content: space-around;
+  }
+
+  .section-center > .section-item:nth-child(2) {
+    order: 1;
+    align-items: start;
+    // margin-top: 0;
+  }
+
+  .section-center > .section-item:nth-child(1) {
+        align-items: start;
+  }
+
+    .section-bottom{
+    justify-content: space-around;
+  }
+
+  .section-bottom > .section-item:nth-child(2){
+    order: 5;
+    min-width: 90%;
+    height: 500px;
+    margin-top: 40px;
+  }
+
+    .section-bottom > .section-item:nth-child(3) {
+    order: 1;
+    align-items: center;
+  }
+
+  .section-bottom > .section-item:nth-child(1) {
+     align-items: center;
+  }
+  .section-about {
+    margin: 0 40px;
+  }
+ }
   
-// }
+@media (max-width: 991.98px) and (min-width: 576px) {
+
+  .sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .main {background-image: none;
+  }
+
+  .section-item {
+    margin: 20px 10px;
+    margin-bottom: 0;
+  }
+
+  .section-top > .section-item:nth-child(2) {
+    margin-top: 80px;
+    order: -1;
+  }
+
+  .section-bottom > .section-item:nth-child(1) {
+       justify-content: center;
+  }
+
+  .languages-list__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-bottom > .section-item:nth-child(2){
+    order: 5;
+    min-width: 90%;
+    height: 500px;
+    margin-top: 40px;
+  }
+  
+}
+
+@media (max-width: 575.98px)  and (min-width: 320px) {
+  .main {
+    min-width: 320px;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+  }
+  .heading {
+    text-align: center;
+  }
+  .section-item {
+    justify-content: center;
+  }
+  .svg-container {
+    width: 320px;
+    margin-right: -200px;
+  }
+  .text_code {
+    font-size: 8px;
+  }
+  
+}
 
 
 

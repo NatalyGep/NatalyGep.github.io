@@ -1,0 +1,99 @@
+.block {
+    /* m5-15 */
+    margin: 5px 15px;
+    /* p5-6-3-10 */
+    padding: 5px 6px 3px 10px;
+    /* m-10--30 */
+    margin: -10px -30px;
+    /* w10p */
+    width: 10%;
+    /* m10e30p30x */
+    margin: 10em 30% 30ex;
+    /* m0-a */
+    margin: 0 auto;
+    /* c#3 */
+    color: #333;
+    /* c#e0 */
+    color: #e0e0e0;
+    /* c#fc0 */
+    color: #fc0;
+    /* bg#0 */
+    background: #000;
+    /* fwb */
+    font-weight: bold;
+    /* p!5 */
+    padding: 5px !important;
+    /* pos:a */
+    position: absolute;
+    /* m:a */
+    margin: auto;
+    /* fl:r */
+    float: right;
+    /* cl */
+    clear: both;
+    /* dib */
+    display: inline-block;
+    /* vh */
+    visibility: hidden;
+    /* ov:h */
+    overflow: hidden;
+    /* rsz:n */
+    resize: none;
+    /* cur:p */
+    cursor: pointer;
+    /* bxz */
+    box-sizing: border-box;
+    /* mah50 */
+    max-height: 50px;
+    /* miw50 */
+    min-width: 50px;
+    /* fw:br */
+    font-weight: bolder;
+    /* fz10 */
+    font-size: 10px;
+    /* tar */
+    text-align: right;
+    /* tdn */
+    text-decoration: none;
+    /* ltsn */
+    letter-spacing: normal;
+    /* tt:u */
+    text-transform: uppercase;
+    /* bgi */
+    background-image: url();
+    /* bgsc */
+    background-size: cover;
+    /* cr */
+    color: rgb(0, 0, 0); /* перейти к следующему значению через tab */
+    /* cra */
+    color: rgba(0, 0, 0, .5);
+    /* op.5 */
+    opacity: 0.5;
+   /* bd */
+   border: 1px solid #000;
+   /* bdrs8 */
+   border-radius: 8px;
+   /* lis */
+   list-style: ;
+      /* trf */
+    transform: ;
+    /* -o  -m  префиксы*/
+    
+    
+
+}
+/* @ff */
+   @font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'),
+         url('FileName.woff') format('woff'),
+         url('FileName.ttf') format('truetype'),
+         url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+   }
+   /* @kf */
+   @keyframes identifier {
+    
+   }
