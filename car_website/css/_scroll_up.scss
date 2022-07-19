@@ -1,0 +1,21 @@
+.scrollup {
+  position: fixed;
+  right: 16px;
+  bottom: -30%;
+  background-color: hsl(0, 0%, 100%, .1);
+  backdrop-filter: blur(16px);
+  display: inline-flex;
+  padding: 7px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: $white-color;
+  z-index: $z-tooltip;
+  transition: .4s;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.show-scroll {
+  bottom: 48px;
+}

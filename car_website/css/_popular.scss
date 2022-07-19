@@ -1,0 +1,81 @@
+.popular {
+  &__container {
+padding-top: 16px;
+  }
+  &__card {
+    position: relative;
+    max-width: 238px;
+    background-color: $container-color;
+    padding: 32px 24px 24px;
+    border-radius: 16px;
+    margin-bottom: 56px;
+    overflow: hidden;
+    &:hover .popular__img{
+transform: translateY(-4px);
+    }
+    & .shape__smaller {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+ 
+
+    }
+  }
+  &__title,
+  &__subtitle,
+  &__img {
+    position: relative;
+  }
+  &__title {
+    font-size: $h2-font-size;
+    margin-bottom: 4px;
+  }
+  &_subtitle {
+    font-size: $normal-font-size;
+    color: $text-color;
+    font-weight: 400;
+  }
+  &__img {
+    max-width: 160px;
+    margin: 12px 18px 24px;
+    transition: .3s;
+  }
+  &__data {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 8px 20px;
+    margin-bottom: 32px;
+    &__group {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 8px;
+      font-size: $smaller-font-size;
+      color: $white-color;
+    }
+    & i {
+      font-size: 16px;
+    }
+  }
+  &__price {
+    font-size: $h3-font-size;
+  }
+  &__button {
+    border: none;
+    padding: 12px 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px 0;
+    cursor: pointer;
+    & i {
+      font-size: 20px;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+background: $text-color;
+&-active {
+  background-color: $first-color;
+}
+}

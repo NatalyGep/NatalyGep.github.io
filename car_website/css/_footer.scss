@@ -1,0 +1,72 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  & .shape__big,
+  & .shape__small {
+    position: absolute;
+  }
+  & .shape__big {
+    max-width: 300px;
+    max-height: 300px;
+    left: -192px;
+    top: 96px;
+  }
+  & .shape__small {
+    right: -208px;
+    bottom: -96px;
+  }
+  &__container {
+    row-gap: 40px;
+    position: relative;
+
+  }
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 4px;
+    color: $title-color;
+    font-size: $h2-font-size;
+    font-weight: $font-semi-bold;
+    margin-bottom: 20px;
+    transition: .3s;
+    & i {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    &:hover {
+      color: $first-color;
+    }
+  }
+  &__title {
+    font-size: $h3-font-size;
+    margin-bottom: 20px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  &__link,
+  &__social-link {
+    color: $text-color;
+    transition: .3s;
+  }
+  &__link:hover,
+  &__social-link:hover {
+color: $title-color;
+  } 
+  &__social {
+    display: flex;
+    column-gap: 24px;
+    &-link {
+      font-size: 20px;
+    }
+  }
+  &__copy {
+    display: block;
+    margin-top: 72px;
+    text-align: center;
+    font-size: $smaller-font-size;
+    color: $text-color-light;
+  }
+}

@@ -1,0 +1,106 @@
+.featured {
+    &__container {
+        padding-top: 16px;
+    }
+    &__filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 16px;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        width: 48px;
+        height: 48px;
+        border: none;
+        padding: 12px;
+        border-radius: 12px;
+        background-color: $container-color;
+        color: $white-color;
+        font-size: $normal-font-size;
+        cursor: pointer;
+        & img {
+            width: 24px;
+        }
+        & img,
+        & span {
+            opacity: 0.3;
+            transition: 0.3s;
+        }
+        &:hover {
+            background-color: $first-color;
+
+            & img,
+            & span {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__content {
+        grid-template-columns: 228px;
+        row-gap: 40px;
+        justify-content: center;
+    }
+    &__card {
+        position: relative;
+        background-color: $container-color;
+        padding: 32px 24px 24px;
+        border-radius: 16px;
+        & .shape__smaller {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+        }
+        &:hover  .featured__img{
+transform: translateX(-4px);
+        }
+
+    }
+    &__img,
+    &__subtitle,
+    &__title {
+        position: relative;
+    }
+
+    &__title {
+      font-size: $h2-font-size;
+      margin-bottom: 4px;
+    }
+    &__subtitle {
+      font-size: $normal-font-size;
+      color: $text-color;
+      font-weight: 400;
+    }
+    &__img {
+      max-width: 180px;
+      margin: 24px 0;
+      transition: .3s;
+    }
+    &__price {
+      font-size: $h3-font-size;
+    }
+
+    &__button {
+      border: none;
+      padding: 12px 16px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 16px 0;
+      cursor: pointer;
+
+      & i {
+        font-size: 18px;
+      }
+    }
+}
+
+.active-featured {
+  background-color: $first-color;
+  & span,
+  & img {
+opacity: 1;
+  }
+}

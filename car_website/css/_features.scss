@@ -1,0 +1,59 @@
+.features {
+  overflow: hidden;
+  position: relative;
+  &__container {
+    padding-top: 32px;
+    grid-template-columns: 285px;
+    justify-content: center;
+  }
+
+  &__group {
+display: grid;
+position: relative;
+z-index: 10;
+  }
+  &__img {
+max-width: 150px;
+justify-self: center;
+  }
+  &__card {
+    min-width: 112px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 12px 32px;
+    text-align: center;
+    color: $title-color;
+    position: absolute;
+    &-1 {
+      top: 64px;
+      left: 24px;
+    }
+    &-2 {
+      top: 128px;
+      right: 16px;
+    }
+    &-3 {
+      left: 24px;
+      bottom: 32px;
+    }
+    &-title {
+      font-size: $h3-font-size;
+      margin-bottom: 4px;
+    }
+            &__description {
+              font-size: $smaller-font-size;
+            }
+  }
+
+  &__map {
+    max-width: initial;
+    max-width: 450px;
+    position: absolute;
+    top: 128px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(-22deg);
+  }
+}

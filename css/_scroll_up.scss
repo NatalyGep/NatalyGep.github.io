@@ -1,0 +1,31 @@
+.scrollup {
+  position: fixed;
+  right: 28px;
+  bottom: -30%;
+  display: inline-flex;
+  padding: 7px;
+  font-size: 38px;
+  color: $color-yellow;
+  z-index: 10;
+  transition: .4s;
+  animation: button 3s infinite;
+
+       
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.show-scroll {
+  bottom: 28px;
+}
+
+@keyframes button {
+  0% {
+    text-shadow: 0 0 28px $color-yellow;
+  }
+
+  100% {
+    text-shadow: 0 0 34px $color-yellow;
+  }
+}
