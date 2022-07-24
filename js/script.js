@@ -1,3 +1,11 @@
+//loader 
+onload = () =>{
+	const load = document.getElementById('load')
+	setTimeout(() =>{
+load.style.display = 'none'
+	}, 2500)
+}
+
 //  SHOW SCROLL UP 
 
   const scrollUp = () =>{
@@ -23,4 +31,6 @@ sr.reveal(`.heading-items`, {delay: 500})
 sr.reveal(`.section-top`, {delay: 600, interval: 100, origin: 'top'})
 sr.reveal(`.section-additional-education`, {origin: 'left'})
 sr.reveal(`.section-hobbies`, {origin: 'right'})
-sr.reveal(`section-bottom, .section-about`, {delay: 600, interval: 200, origin: 'bottom'})
+sr.reveal(`.section-bottom, .section-about`, {delay: 600, interval: 200, origin: 'bottom'})
+
+

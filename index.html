@@ -10,315 +10,316 @@
         <meta name="author" content="Natalya Gepalova">
         <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/d83d545de8.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
+        <!-- <div class="load" id="load"> <img src="img/gears-anim.gif" alt=""
+        class="load__gif"> </div> -->
         <div id="cursorBlob"></div>
         <header class="header">
-            <h1 class="heading heading_header">GEPALOVA NATALYA</h1>
-            <div class="heading-items">
-                <h2 class="heading-small heading-small_list">29 y.o.</h2>
-                <h2 class="heading-small heading-small_list">05-01-1993</h2>
-                <h2 class="heading-small heading-small_list">Kaliningrad</h2>
-                <h2 class="heading-small heading-small_list">Russia</h2>
+            <h1 class="header__title">GEPALOVA NATALYA</h1>
+            <div class="header__items">
+                <h2 class="header__subtitle">29 y.o.</h2>
+                <h2 class="header__subtitle">05-01-1993</h2>
+                <h2 class="header__subtitle">Kaliningrad</h2>
+                <h2 class="header__subtitle">Russia</h2>
             </div>
         </header>
-        <main class="main">
-            <div class="sections section-top">
-                <section class="section-item section-education">
-                    <h2 class="heading-main">education</h2>
-                    <ul class="education-list">
-                        <li class="education-list__item">
-                            <a
-                                class="text text_list-education"
-                                href="certificates/diplom_bachelor.pdf"
-                                target="_blank">KuzSTU T.F. Gorbacheva Bachelor's
-                                <br>Degree 08.03.01-Construction</a>
-                        </li>
-                        <li class="education-list__item">
-                            <a
-                                class="text text_list-education"
-                                href="certificates/diplom_master.pdf"
-                                target="_blank">KuzSTU T.F. Gorbacheva Master's
-                                <br>Degree 08.04.01-Construction</a>
-                        </li>
-                        <li class="education-list__item">
-                            <a
-                                class="text text_list-education"
-                                href="certificates/TGY_Web-programmer.pdf"
-                                target="_blank">TGY Web-programmer: from scratch
-                                <br>to first projects</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section-item section-photo">
-                    <h2 class="heading-main visually-hidden ">Photo Gepalova Natalya</h2>
-                    <!-- <picture> <source media="(max-width: 540px)" srcset=""> <source
-                    media="(max-width: 1140px)" srcset=""> <img src="img/photo/photo.png" alt="photo
-                    Gepalova Natalya"> </picture> -->
-                    <div class="svg-container">
-                        <img
-                            class="photo"
-                            srcset="img/photo/photo.png 1x,
+        <main class="main grid">
+            <section class="education section">
+                <h2 class="section__title">education</h2>
+                <ul class="education__list">
+                    <li class="education__item">
+                        <a
+                            class="text education__link"
+                            href="certificates/diplom_bachelor.pdf"
+                            target="_blank">KuzSTU T.F. Gorbacheva Bachelor's
+                            <br>Degree 08.03.01-Construction</a>
+                    </li>
+                    <li class="education__item">
+                        <a
+                            class="text education__link"
+                            href="certificates/diplom_master.pdf"
+                            target="_blank">KuzSTU T.F. Gorbacheva Master's
+                            <br>Degree 08.04.01-Construction</a>
+                    </li>
+                    <li class="education__item">
+                        <a
+                            class="text education__link"
+                            href="certificates/TGY_Web-programmer.pdf"
+                            target="_blank">TGY Web-programmer: from scratch
+                            <br>to first projects</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="profile section">
+                <h2 class="section__title visually-hidden ">Photo Gepalova Natalya</h2>
+                <!-- <picture> <source media="(max-width: 540px)" srcset=""> <source
+                media="(max-width: 1140px)" srcset=""> <img src="img/photo/photo.png" alt="photo
+                Gepalova Natalya"> </picture> -->
+                <div class="profile__container">
+                    <img
+                        class="profile__photo"
+                        srcset="img/photo/photo.png 1x,
                                     img/photo/photo_2x.png 2x"
-                            src="img/photo/photo.png"
-                            alt="photo Gepalova Natalya">
-                        <img class="anima-svg anima-svg_react" src="icons/react.svg" alt="react">
-                        <img class="anima-svg anima-svg_ts" src="icons/ts.svg" alt="ts">
-                        <img class="anima-svg anima-svg_nmp" src="icons/nmp.svg" alt="nmp">
-                        <img class="anima-svg anima-svg_jquery" src="icons/jquery.svg" alt="jquery">
-                        <img
-                            class="anima-svg anima-svg_bootstrap"
-                            src="icons/bootstrap.svg"
-                            alt="bootstrap">
-                    </div>
-                    <pre class="text text_code">
+                        src="img/photo/photo.png"
+                        alt="photo Gepalova Natalya">
+                    <img class="profile__svg profile__react" src="icons/react.svg" alt="react">
+                    <img class="profile__svg profile__ts" src="icons/ts.svg" alt="ts">
+                    <img class="profile__svg profile__nmp" src="icons/nmp.svg" alt="nmp">
+                    <img class="profile__svg profile__jquery" src="icons/jquery.svg" alt="jquery">
+                    <img
+                        class="profile__svg profile__bootstrap"
+                        src="icons/bootstrap.svg"
+                        alt="bootstrap">
+                </div>
+                <pre class="profile__code">
 console.log(
-`Welcome, ${firstName} ${lastName}!`
+`welcome, ${firstname} ${lastname}!`
 );</pre>
-                </section>
-                <section class="section-item section-contacts">
-                    <h2 class="heading-main">contacts</h2>
-                    <ul class="contact-list">
-                        <li class="contact-list__item contact-list__item_phone">
-                            <a href="tel:+79930223311" class="text">+7 (993) 022-33-11</a>
-                        </li>
-                        <li class="contact-list__item contact-list__item_email">
-                            <a href="mailto:gepnata@mail.ru" class="text text_list-contact">gepnata@mail.ru</a>
-                        </li>
-                        <li class="contact-list__item contact-list__item_github">
-                            <a href="#" class="text text_list-contact">GitHub</a>
-                        </li>
-                        <li class="contact-list__item contact-list__item_vk">
-                            <a href="#" class="text text_list-contact">VK</a>
-                        </li>
-                        <li class="contact-list__item contact-list__item_instagram">
-                            <a href="#" class="text text_list-contact">Instagram</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="sections section-center">
-                <section class="section-item section-additional-education">
-                    <h2 class="heading-main">additional education</h2>
-                    <ul class="additional-education-list">
-                        <li class="additional-education-list__item">
-                            <a href="#" class="text text_additional-education">html/css interactive course</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Git basic course</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">
-                                Web development for beginners<br>
-                                HTML and CSS
-                            </a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">JavaScript for Beginners</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">
-                                Frontend developer in HTML,<br>
-                                CSS and JavaScript
-                            </a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">A young fighter course in IT</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Web project security analysis</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Web technologies</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">A layout trainer, Emmet plugin</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Web design KITIS</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Basic Figma</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Basic Adobe Photoshop</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Basic Adobe Photoshop</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Adobe Photoshop collaging</a>
-                        </li>
-                        <li class="additional-education-list__item">
-                            <a href="" class="text text_additional-education">Basic Canva</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section-item section-hobbies">
-                    <h2 class="heading-main">hobbies</h2>
-                    <ul class="hobbies-list">
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-map-location"></i>Travel</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-clapperboard"></i>Movies</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-gamepad"></i>Computer games</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-heart-pulse"></i>Sports</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-cloud-sun"></i>Outdoor activities</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-headphones"></i>Music</li>
-                        <li class="text text_hobbies">
-                            <i class="fa-solid fa-utensils"></i>Cooking</li>
-                        <li class="text text_hobbies"></li>
-                        <li class="text text_hobbies"></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="sections section-bottom">
-                <section class="section-item section-languages">
-                    <h2 class="heading-main">languages</h2>
-                    <ul class="languages-list">
-                        <li class="languages-list__item">
-                            <div
-                                class="progress-bar"
-                                style="--num:25; --width:150px; --height:150px; --stroke:440;">
-                                <a href="certificates/eng_ge_starter.png" target="_blank">
-                                    <div class="progress-bar__dot"></div>
-                                    <svg class="progress-bar__svg">
-                                        <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
-                                        <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
-                                    </svg>
-                                    <div class="progress-bar__descriptions">
-                                        <p class="text">25%</p>
-                                        <p class="text">Eng</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="languages-list__item">
-                            <div
-                                class="progress-bar"
-                                style="--num:100; --width:150px; --height:150px; --stroke:440;">
+            </section>
+            <section class="contact section">
+                <h2 class="section__title">contacts</h2>
+                <ul class="contact__list">
+                    <li class="contact__item contact__item_phone">
+                        <a href="tel:+79930223311" class="text">+7 (993) 022-33-11</a>
+                    </li>
+                    <li class="contact__item contact__item_email">
+                        <a href="mailto:gepnata@mail.ru" class="text">gepnata@mail.ru</a>
+                    </li>
+                    <li class="contact__item contact__item_github">
+                        <a href="#" class="text">GitHub</a>
+                    </li>
+                    <li class="contact__item contact__item_vk">
+                        <a href="#" class="text">VK</a>
+                    </li>
+                    <li class="contact__item contact__item_instagram">
+                        <a href="#" class="text">Instagram</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section additional-education">
+                <h2 class="section__title">additional education</h2>
+                <ul class="additional-education__list">
+                    <li class="additional-education__item">
+                        <a href="#" class="text text_additional-education">html/css interactive course</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Git basic course</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">
+                            Web development for beginners<br>
+                            HTML and CSS
+                        </a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">JavaScript for Beginners</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">
+                            Frontend developer in HTML,<br>
+                            CSS and JavaScript
+                        </a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a
+                            href="https://www.freecodecamp.org/certification/NataGep/responsive-web-design"
+                            class="text text_additional-education">Responsive Web Design</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">A young fighter course in IT</a>
+                    </li>
+
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Web technologies</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">A layout trainer, Emmet plugin</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Web design KITIS</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Basic Figma</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Basic Adobe Photoshop</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Basic Adobe Photoshop</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Adobe Photoshop collaging</a>
+                    </li>
+                    <li class="additional-education__item">
+                        <a href="" class="text text_additional-education">Basic Canva</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section hobbies">
+                <h2 class="section__title">hobbies</h2>
+                <ul class="hobbies__list">
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-map-location"></i>Travel</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-clapperboard"></i>Movies</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-gamepad"></i>Computer games</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-heart-pulse"></i>Sports</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-cloud-sun"></i>Outdoor activities</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-headphones"></i>Music</li>
+                    <li class="text text_hobbies">
+                        <i class="fa-solid fa-utensils"></i>Cooking</li>
+                    <li class="text text_hobbies"></li>
+                    <li class="text text_hobbies"></li>
+                </ul>
+            </section>
+            <section class="section languages">
+                <h2 class="section__title">languages</h2>
+                <ul class="languages__list">
+                    <li class="languages__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:25; --width:150px; --height:150px; --stroke:440;">
+                            <a href="certificates/eng_ge_starter.png" target="_blank">
                                 <div class="progress-bar__dot"></div>
                                 <svg class="progress-bar__svg">
                                     <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
                                     <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="progress-bar__descriptions">
-                                    <p class="text">Native</p>
-                                    <p class="text">Russia</p>
+                                    <p class="text">25%</p>
+                                    <p class="text">Eng</p>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <section class="section-item section-projects">
-                    <h2 class="heading-main">projects</h2>
-                    <div class="bubble">
-                        <div class="bubble__slider">
-                            <div class="projects__slider">
-                                <p class="text"></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="languages__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:100; --width:150px; --height:150px; --stroke:440;">
+                            <div class="progress-bar__dot"></div>
+                            <svg class="progress-bar__svg">
+                                <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
+                                <circle class="progress-bar__circle" cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="progress-bar__descriptions">
+                                <p class="text">Native</p>
+                                <p class="text">Russia</p>
                             </div>
                         </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="section projects">
+                <h2 class="section__title">projects</h2>
+                <div class="projects__bubble">
+                    <div class="projects__bubble-slider">
+                        <div class="projects__slider">
+                            <p class="text"></p>
+                        </div>
                     </div>
-
-                    </section>
-                    <section class="section-item section-skills">
-                        <h2 class="heading-main">skills</h2>
-                        <ul class="skill-list">
-                            <li class="skill-list__item">
-                                <div
-                                    class="progress-bar"
-                                    style="--num:80; --width:90px; --height:90px; --stroke:250;">
-                                    <div class="progress-bar__dot"></div>
-                                    <svg class="progress-bar__svg">
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                    </svg>
-                                    <div class="progress-bar__descriptions">
-                                        <p class="text text-skill">80%</p>
-                                        <p class="text text-skill">HTML</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skill-list__item">
-                                <div
-                                    class="progress-bar"
-                                    style="--num:80; --width:90px; --height:90px; --stroke:250;">
-                                    <div class="progress-bar__dot"></div>
-                                    <svg class="progress-bar__svg">
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                    </svg>
-                                    <div class="progress-bar__descriptions">
-                                        <p class="text text-skill">80%</p>
-                                        <p class="text text-skill">CSS</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="skill-list">
-                            <li class="skill-list__item">
-                                <div
-                                    class="progress-bar"
-                                    style="--num:20; --width:90px; --height:90px; --stroke:250;">
-                                    <div class="progress-bar__dot"></div>
-                                    <svg class="progress-bar__svg">
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                    </svg>
-                                    <div class="progress-bar__descriptions">
-                                        <p class="text text-skill">20%</p>
-                                        <p class="text text-skill">JS</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="skill-list__item">
-                                <div
-                                    class="progress-bar"
-                                    style="--num:20; --width:90px; --height:90px; --stroke:250;">
-                                    <div class="progress-bar__dot"></div>
-                                    <svg class="progress-bar__svg">
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                        <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
-                                    </svg>
-                                    <div class="progress-bar__descriptions">
-                                        <p class="text text-skill">20%</p>
-                                        <p class="text text-skill">PHP</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
                 </div>
-                <section class="section-item section-about">
-                    <h2 class="heading-main">About me</h2>
-                    <p class="text">
-                        <!-- использовать типограф-->Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Consectetur voluptatem enim, eos quaerat itaque, cupiditate perferendis
-                            voluptas ipsam, corrupti quidem consequuntur ea atque deleniti temporibus
-                            aperiam unde porro ad corporis? Nulla iste vero quibusdam adipisci libero
-                            consequuntur, qui dolorum veniam recusandae exercitationem pariatur impedit
-                            expedita consectetur dolore saepe itaque molestias culpa, dicta ratione sequi
-                            placeat. Blanditiis tempore ipsam vitae sapiente dolore rem. Asperiores aliquid
-                            necessitatibus esse est molestiae, cupiditate harum?</p>
-                </section>
-                            <a href="#" class="scrollup" id="scroll-up">
-                                <i class="fa-solid fa-circle-arrow-up"></i>
-                            </a>
-            </main>
-            <footer class="footer">
-                <p class="text footer__text">&copy; Natalya Gepalova</p>
-            </footer>
-            <script src="js/scrollreveal.min.js"></script>
-            <script src="js/script.js"></script>
-            <script src="js/cursor.js"></script>
-        </body>
-    </html>
+
+            </section>
+            <section class="section skills">
+                <h2 class="section__title">skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:80; --width:90px; --height:90px; --stroke:250;">
+                            <div class="progress-bar__dot"></div>
+                            <svg class="progress-bar__svg">
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                            </svg>
+                            <div class="progress-bar__descriptions">
+                                <p class="text text_skill">80%</p>
+                                <p class="text text_skill">HTML</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:80; --width:90px; --height:90px; --stroke:250;">
+                            <div class="progress-bar__dot"></div>
+                            <svg class="progress-bar__svg">
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                            </svg>
+                            <div class="progress-bar__descriptions">
+                                <p class="text text_skill">80%</p>
+                                <p class="text text_skill">CSS</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:20; --width:90px; --height:90px; --stroke:250;">
+                            <div class="progress-bar__dot"></div>
+                            <svg class="progress-bar__svg">
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                            </svg>
+                            <div class="progress-bar__descriptions">
+                                <p class="text text_skill">20%</p>
+                                <p class="text text_skill">JS</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div
+                            class="progress-bar"
+                            style="--num:20; --width:90px; --height:90px; --stroke:250;">
+                            <div class="progress-bar__dot"></div>
+                            <svg class="progress-bar__svg">
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                                <circle class="progress-bar__circle" cx="40" cy="40" r="40"></circle>
+                            </svg>
+                            <div class="progress-bar__descriptions">
+                                <p class="text text_skill">20%</p>
+                                <p class="text text_skill">PHP</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="section about">
+                <h2 class="section__title">About me</h2>
+                <p class="text">
+                    <!-- использовать типограф-->Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Consectetur voluptatem enim, eos quaerat itaque, cupiditate perferendis
+                        voluptas ipsam, corrupti quidem consequuntur ea atque deleniti temporibus
+                        aperiam unde porro ad corporis? Nulla iste vero quibusdam adipisci libero
+                        consequuntur, qui dolorum veniam recusandae exercitationem pariatur impedit
+                        expedita consectetur dolore saepe itaque molestias culpa, dicta ratione sequi
+                        placeat. Blanditiis tempore ipsam vitae sapiente dolore rem. Asperiores aliquid
+                        necessitatibus esse est molestiae, cupiditate harum?</p>
+            </section>
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        </main>
+        <footer class="footer">
+            <p class="text text_footer">&copy; Natalya Gepalova</p>
+        </footer>
+        <script src="js/scrollreveal.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/cursor.js"></script>
+    </body>
+</html>
