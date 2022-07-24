@@ -26,11 +26,11 @@ delay: 400,
 //reset: true
 })
 
-sr.reveal(`.heading_header`)
-sr.reveal(`.heading-items`, {delay: 500})
-sr.reveal(`.section-top`, {delay: 600, interval: 100, origin: 'top'})
-sr.reveal(`.section-additional-education`, {origin: 'left'})
-sr.reveal(`.section-hobbies`, {origin: 'right'})
-sr.reveal(`.section-bottom, .section-about`, {delay: 600, interval: 200, origin: 'bottom'})
+sr.reveal(`.header__title`)
+sr.reveal(`.header__items`, {delay: 500})
+sr.reveal(`.education, .profile, .contact`, {delay: 600, interval: 100, origin: 'top'})
+sr.reveal(`.additional-education`, {origin: 'left'})
+sr.reveal(`.hobbies`, {origin: 'right'})
+sr.reveal(`.languages, .projects, .skills, .about, .footer`, {delay: 600, interval: 200, origin: 'bottom'})
 
 
