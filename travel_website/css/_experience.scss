@@ -1,0 +1,53 @@
+.experience {
+  &__container {
+    row-gap: 24px;
+    justify-content: center;
+    justify-items: center;
+  }
+  &__content {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    justify-items: center;
+    padding: 0 32px;
+  }
+  &__number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-5);
+  }
+  &__description {
+    font-size: var(--small-font-size);
+  }
+
+        &__overlay {
+          overflow: var(--img-hidden);
+    
+          &:nth-child(1) {
+            width: 268px;
+            margin-right: 32px;
+          }
+    
+          &:nth-child(2) {
+            width: 120px;
+            position: absolute;
+            top: 32px;
+            right: 0;
+    
+          }
+        }
+  &__img {
+    position: relative;
+    padding-bottom: 32px;
+    &-one,
+    &-two {
+transition: var(--img-transition);
+    }
+    &-one:hover,
+    &-two:hover {
+transform: var(--img-scale);
+    }
+  }
+
+ 
+        
+}

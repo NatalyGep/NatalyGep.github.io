@@ -1,0 +1,31 @@
+body.dark-theme {
+  --first-color-second: hsl(190, 54%, 12%);
+  --title-color: hsl(190, 24%, 95%);
+  --text-color: hsl(190, 8%, 75%);
+  --input-color: hsl(190, 29%, 16%);
+  --body-color: hsl(190, 29%, 12%);
+  --scroll-bar-color: hsl(190, 12%, 48%);
+  --scroll-thumb: hsl(190, 12%, 36%);
+}
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  position: absolute;
+  left: 48px;
+  bottom: 64px;
+}
+
+.change-theme,
+.change-theme-name {
+  color: var(--text-color);
+}
+
+.change-theme {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.change-theme-name {
+  font-size: var(--small-font-size);
+}

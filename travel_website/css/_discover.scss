@@ -1,0 +1,35 @@
+.discover {
+  &__card {
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+  }
+  &__data {
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+  }
+  &__title,
+  &__description {
+    color: var(--white-color);
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+  }
+  &__description {
+    display: block;
+    font-size: var(--smaller-font-size);
+  }
+  &__img {
+    transition: var(--img-transition);
+&:hover {
+  transform: var(--img-scale);
+}
+  }
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+background-image: none;
+}

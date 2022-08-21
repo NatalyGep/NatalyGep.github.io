@@ -1,0 +1,96 @@
+.value {
+    &__container {
+        row-gap: 48px;
+    }
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__orbe {
+        width: 266px;
+        height: 316px;
+        background-color: hsl(228, 24%, 97%);
+        border-radius: 135px 135px 16px 16px;
+    }
+    &__img {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 125px 125px 12px 12px;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+    }
+    &__description {
+        font-size: var(--small-font-size);
+        margin-bottom: 32px;
+    }
+    &__accordion {
+        display: grid;
+        row-gap: 24px;
+        &-item {
+            background-color: var(--body-color);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 12px;
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        &-icon {
+            background-color: var(--first-color-lighten);
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 18px;
+            color: var(--first-color);
+            margin-right: 12px;
+            transition: 0.3s;
+        }
+        &-title {
+            font-size: var(--small-font-size);
+        }
+        &-arrow {
+            display: inline-flex;
+            background-color: var(--first-color-lighten);
+            padding: 4px;
+            color: var(--first-color);
+            border-radius: 2px;
+            font-size: 10px;
+            margin-left: auto;
+            transition: 0.3s;
+            & i {
+                transition: 0.4s;
+            }
+        }
+        &-description {
+            font-size: var(--smaller-font-size);
+            padding: 20px 40px 0 44px;
+        }
+        &-content {
+            overflow: hidden;
+            height: 0;
+            transition: all 0.25s ease;
+        }
+    }
+
+
+}
+        .accordion-open {
+          box-shadow: 0 12px 32px hsla(228, 66%, 45%, .15);
+    
+          & .value__accordion-icon {
+            box-shadow: 0 4px 4px hsla(228, 66%, 45%, .15);
+          }
+    
+          & .value__accordion-arrow {
+            box-shadow: 0 2px 4px hsla(228, 66%, 45%, .15);
+          }
+    
+          & .value__accordion-arrow i {
+            transform: rotate(-180deg);
+          }
+        }

@@ -1,0 +1,25 @@
+.scrollup {
+  position: fixed;
+  right: 16px;
+  bottom: -20%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px hsla(228, 66%, 45%, .15);
+  padding: 6px;
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--title-color);
+  font-size: 20px;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-4px);
+  color: var(--first-color);
+}
+
+
+/* Show scroll */
+.show-scroll {
+  bottom: 128px;
+}

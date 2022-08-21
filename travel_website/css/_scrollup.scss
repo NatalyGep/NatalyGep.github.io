@@ -1,0 +1,22 @@
+.scrollup {
+  position: fixed;
+  right: 16px;
+  bottom: -20%;
+  background-color: var(--first-color);
+  padding: 8px;
+  display: flex;
+  opacity: 0.9;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  &__icon {
+    color: var(--white-color);
+  }
+  &:hover {
+    background-color: var(--first-color-alt);
+    opacity: 1;
+  }
+}
+
+.show-scroll {
+  bottom: 72px;
+}
