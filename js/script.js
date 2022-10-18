@@ -33,4 +33,12 @@ sr.reveal(`.additional-education`, {origin: 'left'})
 sr.reveal(`.hobbies`, {origin: 'right'})
 sr.reveal(`.languages, .projects, .skills, .about, .footer`, {delay: 600, interval: 200, origin: 'bottom'})
 
+if (window.innerWidth <= '992') {
+sr.reveal(`.header__title`)
+sr.reveal(`.header__items`, {delay: 500})
+sr.reveal(`.education, .profile, .contact`, {delay: 600, interval: 100, origin: 'top'})
+sr.reveal(`.additional-education`, {origin: 'top'})
+sr.reveal(`.hobbies`, {origin: 'top'})
+sr.reveal(`.languages, .projects, .skills, .about, .footer`, {delay: 600, interval: 200, origin: 'top'})
 
+}
